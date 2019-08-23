@@ -192,7 +192,9 @@ export class NgxEditorToolbarComponent implements OnInit {
   }
 
   /** inser text/background color */
-  insertColor(color: string, where: string): void {
+  insertColor(color: string, hue: string, where: string): void {
+    console.warn(color);
+    console.warn(hue);
     try {
       this._commandExecutorService.insertColor(color, where);
     } catch (error) {

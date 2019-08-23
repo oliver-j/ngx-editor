@@ -83,7 +83,7 @@ export declare class NgxEditorToolbarComponent implements OnInit {
     /** insert image in the editor */
     insertVideo(): void;
     /** inser text/background color */
-    insertColor(color: string, where: string): void;
+    insertColor(color: string, hue: string, where: string): void;
     /** set font size */
     setFontSize(fontSize: string): void;
     /** set font Name/family */
