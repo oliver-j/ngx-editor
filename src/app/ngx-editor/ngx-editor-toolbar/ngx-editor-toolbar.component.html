@@ -255,6 +255,7 @@
           <input type="text" class="form-control-sm" id="hexInput" name="hexInput" maxlength="7" placeholder="HEX Color"
             [(ngModel)]="hexColor" required>
         </div>
+        <app-color-picker></app-color-picker>
         <button type="button" class="btn-primary btn-sm btn" (click)="insertColor(hexColor, selectedColorTab)">OK</button>
       </form>
     </div>

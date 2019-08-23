@@ -5,6 +5,7 @@ import { PopoverConfig } from 'ngx-bootstrap';
 import { CommandExecutorService } from '../common/services/command-executor.service';
 import { MessageService } from '../common/services/message.service';
 import * as Utils from '../common/utils/ngx-editor.utils';
+import {ColorPickerComponent} from '../../color-picker/color-picker.component';
 
 @Component({
   selector: 'app-ngx-editor-toolbar',
