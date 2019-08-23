@@ -13,7 +13,6 @@
     "lint:scripts": "eslint ./scripts",
     "ng": "ng",
     "postbuild": "npm run build:package",
-    "prebuild": "npm run lint",
     "prepublishOnly": "node ./scripts/prepublish.js",
     "prerelease": "npm run build",
     "publish:docs": "node ./scripts/publishdocs.js",

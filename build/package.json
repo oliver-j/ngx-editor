@@ -3,6 +3,7 @@
   "version": "4.1.0",
   "description": "WYSIWYG Editor for Angular Applications",
   "license": "MIT",
+  "main": "bundles/ngx-editor.umd.js",
   "keywords": [
     "angular-editor",
     "angular-wysiwyg-editor",
@@ -72,7 +73,6 @@
     "typescript": "~2.9.2",
     "zone.js": "~0.8.26"
   },
-  "main": "bundles/ngx-editor.umd.js",
   "module": "fesm5/ngx-editor.js",
   "es2015": "fesm2015/ngx-editor.js",
   "esm5": "esm5/ngx-editor.js",
