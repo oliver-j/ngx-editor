@@ -193,13 +193,12 @@ export class NgxEditorToolbarComponent implements OnInit {
 
   /** inser text/background color */
   insertColor(color: string, where: string): void {
-    console.warn(color);
-    let hex: any = color.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
-    hex =  "#" +
-      ("0" + parseInt(hex[1],10).toString(16)).slice(-2) +
-      ("0" + parseInt(hex[2],10).toString(16)).slice(-2) +
-      ("0" + parseInt(hex[3],10).toString(16)).slice(-2);
     try {
+      let hex: any = color.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+      hex =  "#" +
+        ("0" + parseInt(hex[1],10).toString(16)).slice(-2) +
+        ("0" + parseInt(hex[2],10).toString(16)).slice(-2) +
+        ("0" + parseInt(hex[3],10).toString(16)).slice(-2);
       this._commandExecutorService.insertColor(hex, where);
     } catch (error) {
       this._messageService.sendMessage(error.message);
