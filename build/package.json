@@ -3,26 +3,6 @@
   "version": "4.1.0",
   "description": "WYSIWYG Editor for Angular Applications",
   "license": "MIT",
-  "main": "build/bundles/ngx-editor.umd.js",
-  "scripts": {
-    "build": "ng build --prod",
-    "build:package": "sh ./scripts/build.sh",
-    "docs": "compodoc && npm run publish:docs",
-    "e2e": "ng e2e",
-    "lint": "ng lint",
-    "lint:scripts": "eslint ./scripts",
-    "ng": "ng",
-    "postbuild": "npm run build:package",
-    "prebuild": "npm run lint",
-    "prepublishOnly": "node ./scripts/prepublish.js",
-    "prerelease": "npm run build",
-    "publish:docs": "node ./scripts/publishdocs.js",
-    "release": "sh ./scripts/release.sh",
-    "start": "ng serve --aot -o --port 5000 --host 0.0.0.0",
-    "serve:docs": "compodoc --serve --open --output=\"docs/\"",
-    "test": "ng test",
-    "test:single-run": "ng test --watch false"
-  },
   "keywords": [
     "angular-editor",
     "angular-wysiwyg-editor",
@@ -91,5 +71,18 @@
     "tslint": "~5.11.0",
     "typescript": "~2.9.2",
     "zone.js": "~0.8.26"
+  },
+  "main": "bundles/ngx-editor.umd.js",
+  "module": "fesm5/ngx-editor.js",
+  "es2015": "fesm2015/ngx-editor.js",
+  "esm5": "esm5/ngx-editor.js",
+  "esm2015": "esm2015/ngx-editor.js",
+  "fesm5": "fesm5/ngx-editor.js",
+  "fesm2015": "fesm2015/ngx-editor.js",
+  "typings": "ngx-editor.d.ts",
+  "metadata": "ngx-editor.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
   }
 }

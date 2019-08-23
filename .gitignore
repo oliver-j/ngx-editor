@@ -6,7 +6,6 @@
 /out-tsc
 /.ng_build
 /.ng_pkg_build
-/build
 build.tgz
 /docs
 
