@@ -260,9 +260,15 @@
   <div class="ngxe-popover extra-gt1">
     <form autocomplete="off">
       <div class="form-group">
+
         <label for="fontSize" class="small">Schriftgröße</label>
-        <input type="text" class="form-control-sm" id="fontSize" name="fontSize" placeholder="Schriftgröße in px/rem"
-          [(ngModel)]="fontSize" required>
+        <select [(ngModel)]="fontSize">
+          <option value="0.5em">Klein</option>
+          <option value="1em">Normal</option>
+          <option value="2em">Groß</option>
+        </select>
+        <!--<input type="number" class="form-control-sm" id="fontSize" name="fontSize" placeholder="Schriftgröße in Pixel"
+          [(ngModel)]="fontSize" required>-->
       </div>
       <button type="button" class="btn-primary btn-sm btn" (click)="setFontSize(fontSize)">OK</button>
     </form>

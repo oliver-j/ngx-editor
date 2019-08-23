@@ -10,6 +10,7 @@ import { MessageService } from './common/services/message.service';
 import { ngxEditorConfig } from './common/ngx-editor.defaults';
 import * as Utils from './common/utils/ngx-editor.utils';
 
+
 @Component({
   selector: 'app-ngx-editor',
   templateUrl: './ngx-editor.component.html',

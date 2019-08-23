@@ -283,7 +283,7 @@ export class CommandExecutorService {
     const slectedText = this.savedSelection.toString();
 
     if (slectedText.length === 0) {
-      throw new Error('No Selection Made');
+      throw new Error('Keine Textstelle ausgewählt');
     }
 
     return true;
