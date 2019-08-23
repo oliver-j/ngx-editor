@@ -8,6 +8,10 @@ export declare class NgxEditorToolbarComponent implements OnInit {
     private _formBuilder;
     private _messageService;
     private _commandExecutorService;
+    fontSizes: {
+        name: string;
+        val: string;
+    }[];
     /** holds values of the insert link form */
     urlForm: FormGroup;
     /** holds values of the insert image form */

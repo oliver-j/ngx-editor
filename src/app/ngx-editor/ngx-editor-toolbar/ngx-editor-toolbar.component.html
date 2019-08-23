@@ -263,9 +263,7 @@
 
         <label for="fontSize" class="small">Schriftgröße</label>
         <select [(ngModel)]="fontSize" name="fontsize">
-          <option value="0.5em">Klein</option>
-          <option value="1em">Normal</option>
-          <option value="2em">Groß</option>
+          <option *ngFor="let size of fontSizes" [value]="size.val">{{size.name}}</option>
         </select>
         <!--<input type="number" class="form-control-sm" id="fontSize" name="fontSize" placeholder="Schriftgröße in Pixel"
           [(ngModel)]="fontSize" required>-->

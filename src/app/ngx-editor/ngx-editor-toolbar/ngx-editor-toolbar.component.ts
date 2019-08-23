@@ -15,6 +15,13 @@ import {ColorPickerComponent} from '../../color-picker/color-picker.component';
 })
 
 export class NgxEditorToolbarComponent implements OnInit {
+
+  public fontSizes = [
+    {name: "Normal", val: "1.0em"},
+    {name: "Klein", val: "0.5em"},
+    {name: "Groß", val: "2.0em"}
+  ];
+
   /** holds values of the insert link form */
   urlForm: FormGroup;
   /** holds values of the insert image form */
@@ -32,7 +39,7 @@ export class NgxEditorToolbarComponent implements OnInit {
   /** font family name */
   fontName = '';
   /** font size */
-  fontSize = '1em';
+  fontSize = this.fontSizes[0].val;
   /** hex color code */
   hexColor = '';
   /** show/hide image uploader */
@@ -51,6 +58,7 @@ export class NgxEditorToolbarComponent implements OnInit {
    * Emits an event when a toolbar button is clicked
    */
   @Output() execute: EventEmitter<string> = new EventEmitter<string>();
+
 
   constructor(private _popOverConfig: PopoverConfig,
     private _formBuilder: FormBuilder,
