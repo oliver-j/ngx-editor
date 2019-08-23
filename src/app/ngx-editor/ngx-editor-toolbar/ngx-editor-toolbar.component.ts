@@ -32,7 +32,7 @@ export class NgxEditorToolbarComponent implements OnInit {
   /** font family name */
   fontName = '';
   /** font size */
-  fontSize = '';
+  fontSize = '1em';
   /** hex color code */
   hexColor = '';
   /** show/hide image uploader */
