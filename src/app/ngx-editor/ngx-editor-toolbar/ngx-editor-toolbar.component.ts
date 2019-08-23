@@ -67,6 +67,7 @@ export class NgxEditorToolbarComponent implements OnInit {
     this._popOverConfig.outsideClick = true;
     this._popOverConfig.placement = 'bottom';
     this._popOverConfig.container = 'body';
+    this.fontSize = this.fontSizes[0].val;
   }
 
   /**
@@ -241,5 +242,6 @@ export class NgxEditorToolbarComponent implements OnInit {
     this.buildUrlForm();
     this.buildImageForm();
     this.buildVideoForm();
+    this.fontSize = this.fontSizes[0].val;
   }
 }
