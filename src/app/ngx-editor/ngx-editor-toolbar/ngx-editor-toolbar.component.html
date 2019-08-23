@@ -249,15 +249,8 @@
       <span (click)="selectedColorTab ='backgroundColor'" [ngClass]="{active: selectedColorTab ==='backgroundColor'}">Hintergrundfarbe</span>
     </div>
     <div class="imgc-ctnt is-color extra-gt1">
-      <form autocomplete="off">
-        <div class="form-group">
-          <label for="hexInput" class="small">Hex Color</label>
-          <input type="text" class="form-control-sm" id="hexInput" name="hexInput" maxlength="7" placeholder="HEX Color"
-            [(ngModel)]="hexColor" required>
-        </div>
-        <app-color-picker></app-color-picker>
-        <button type="button" class="btn-primary btn-sm btn" (click)="insertColor(hexColor, selectedColorTab)">OK</button>
-      </form>
+      <app-color-picker #cpicker></app-color-picker>
+      <button type="button" class="btn-primary btn-sm btn" (click)="insertColor(cpicker.color, selectedColorTab)">OK</button>
     </div>
   </div>
 </ng-template>
