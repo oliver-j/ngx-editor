@@ -55,7 +55,7 @@ export class CommandExecutorService {
         }
       }
     } else {
-      throw new Error('Range out of the editor');
+      throw new Error('Keine Textstelle ausgewählt');
     }
   }
 
@@ -89,7 +89,7 @@ export class CommandExecutorService {
         }
       }
     } else {
-      throw new Error('Range out of the editor');
+      throw new Error('Keine Textstelle ausgewählt');
     }
   }
 
@@ -168,7 +168,7 @@ export class CommandExecutorService {
         }
       }
     } else {
-      throw new Error('Range out of the editor');
+      throw new Error('Keine Textstelle ausgewählt');
     }
   }
 
@@ -189,7 +189,7 @@ export class CommandExecutorService {
         }
       }
     } else {
-      throw new Error('Range out of the editor');
+      throw new Error('Keine Textstelle ausgewählt');
     }
   }
 
@@ -216,7 +216,7 @@ export class CommandExecutorService {
         }
       }
     } else {
-      throw new Error('Range out of the editor');
+      throw new Error('Keine Textstelle ausgewählt');
     }
   }
 
@@ -243,7 +243,7 @@ export class CommandExecutorService {
         }
       }
     } else {
-      throw new Error('Range out of the editor');
+      throw new Error('Keine Textstelle ausgewählt');
     }
   }
 
