@@ -220,7 +220,8 @@ export class CommandExecutorService {
             const fontPx = '<span style="font-size: ' + fontSize + 'px;">' + deletedValue + '</span>';
             this.insertHtml(fontPx);
           } else {
-            const fontPx = '<span style="font-size: ' + fontSize + ';">' + deletedValue + '</span>';
+            // const fontPx = '<span style="font-size: ' + fontSize + ';">' + deletedValue + '</span>';
+            const fontPx = `<span class=font-${fontSize}> ${deletedValue} </span>`;
             this.insertHtml(fontPx);
           }
         }

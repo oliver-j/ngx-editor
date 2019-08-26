@@ -17,9 +17,9 @@ import {ColorPickerComponent} from '../../color-picker/color-picker.component';
 export class NgxEditorToolbarComponent implements OnInit {
 
   public fontSizes = [
-    {name: "Normal", val: "1"},
-    {name: "Klein", val: "4"},
-    {name: "Groß", val: "7"}
+    {name: "Normal", val: "normal"},
+    {name: "Klein", val: "small"},
+    {name: "Groß", val: "big"}
   ];
 
   /** holds values of the insert link form */
@@ -219,7 +219,7 @@ export class NgxEditorToolbarComponent implements OnInit {
   /** set font size */
   setFontSize(fontSize: string): void {
     try {
-      this._commandExecutorService.setFontSize2(fontSize);
+      this._commandExecutorService.setFontSize(fontSize);
     } catch (error) {
       this._messageService.sendMessage(error.message);
     }
