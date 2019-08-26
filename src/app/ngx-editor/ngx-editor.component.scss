@@ -1,4 +1,17 @@
 
+.font-small {
+  font-size: 0.5em;
+}
+
+.font-normal {
+  font-size: 1em;
+}
+
+.font-big {
+  font-size: 2em;
+}
+
+
 .ngx-editor {
   position: relative;
 
@@ -33,17 +46,6 @@
         padding-left: 0.5rem;
       }
 
-      .font-small {
-        font-size: 0.5em;
-      }
-
-      .font-normal {
-        font-size: 1em;
-      }
-
-      .font-big {
-        font-size: 2em;
-      }
     }
 
     ::ng-deep p {
