@@ -193,6 +193,16 @@ export class CommandExecutorService {
     }
   }
 
+
+  setFontSize2(size: string) {
+    if (this.savedSelection) {
+      const restored = Utils.restoreSelection(this.savedSelection);
+      if (restored && this.checkSelection()) {
+        document.execCommand('fontSize', false, size);
+      }
+    }
+  }
+
   /**
    * set font size for text
    *

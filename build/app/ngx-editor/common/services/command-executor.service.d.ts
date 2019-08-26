@@ -57,6 +57,7 @@ export declare class CommandExecutorService {
      * @param where where the color has to be inserted either text/background
      */
     insertColor(color: string, where: string): void;
+    setFontSize2(size: string): void;
     /**
      * set font size for text
      *

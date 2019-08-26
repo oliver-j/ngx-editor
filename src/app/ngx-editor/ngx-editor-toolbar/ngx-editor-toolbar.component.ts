@@ -219,7 +219,7 @@ export class NgxEditorToolbarComponent implements OnInit {
   /** set font size */
   setFontSize(fontSize: string): void {
     try {
-      this._commandExecutorService.setFontSize(fontSize);
+      this._commandExecutorService.setFontSize2(fontSize);
     } catch (error) {
       this._messageService.sendMessage(error.message);
     }
